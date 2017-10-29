@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://s0.2mdn.net/8173700/1508185594021/index.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>250x250</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="ad.size" content="width=250,height=250">
+	<link href="./font.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript">
+		var clickTag = "#";
+	</script>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script><style type="text/css">/* This is not a zero-length file! */</style><style type="text/css">/* This is not a zero-length file! */</style></head>
+
+<body>
+	<div id="container" style="opacity: 1;">
+		<div class="bt"></div><div class="br"></div><div class="bb"></div><div class="bl"></div>
+		<a href="javascript:window.open(window.clickTag)" id="link"></a>
+		<div id="txt1" class="big"><div class="_i" style="z-index: 0; visibility: inherit; opacity: 0.997069; transform: translate(0%, 0.146561%) translate3d(0px, 0px, 0px);">ТАКОГО</div><br style="z-index: 0; visibility: inherit; opacity: 0.99211; transform: translate(0%, 0.394512%) translate3d(0px, 0px, 0px);"><div class="_i" style="z-index: 0; visibility: inherit; opacity: 0.978761; transform: translate(0%, 1.06195%) translate3d(0px, 0px, 0px);">ДОМА ВЫ</div><br style="z-index: 0; visibility: inherit; opacity: 0.942829; transform: translate(0%, 2.85855%) translate3d(0px, 0px, 0px);"><div class="_i" style="z-index: 0; visibility: inherit; opacity: 0.846107; transform: translate(0%, 7.69465%) translate3d(0px, 0px, 0px);">НЕ ВИДЕЛИ</div></div>
+		<img id="bg1" class="bg" src="./bg1.jpg" alt="" style="z-index: 0; visibility: hidden; opacity: 0; transform: matrix(0.8, 0, 0, 0.8, -9, -14);">
+		<div id="txt2" class="smaller" style="z-index: 0; visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 15, 0);">ТВИЛЛИНГ</div>
+		<div id="txt3" class="small" style="z-index: 0; visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 15, 0);">Набор постеров, 2шт</div>
+		<div id="price1" class="price" style="z-index: 0; visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 15, 0);">249.-</div>
+		<img id="bg2" class="bg" src="./bg2.jpg" alt="" style="z-index: 0; visibility: hidden; opacity: 0; transform: matrix(0.8, 0, 0, 0.8, 0, 3);">
+		<div id="txt4" class="smaller" style="z-index: 0; visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 20, 0);">ДРЁМИНГЕ</div>
+		<div id="txt5" class="small" style="z-index: 0; visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 20, 0);">Бра</div>
+		<div id="price2" class="price" style="z-index: 0; visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 20, 0);">499.-</div>
+		<img id="bg3" class="bg" src="./bg3.jpg" alt="" style="z-index: 0; visibility: hidden; opacity: 0; transform: matrix(0.8, 0, 0, 0.8, -13, 0);">
+		<div id="txt6" class="smaller" style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(50%, 0%) matrix(1, 0, 0, 1, 0, 0);">ФЭРГРИК</div>
+		<div id="txt7" class="small" style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(50%, 0%) matrix(1, 0, 0, 1, 0, 0);">Тарелка десертная</div>
+		<div id="price3" class="price" style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(50%, 0%) matrix(1, 0, 0, 1, 0, 0);">79.-</div>
+
+		<div id="txt8" class="big"><div class="_i" style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(0%, 50%) matrix(1, 0, 0, 1, 0, 0);">Больше</div><br style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(0%, 50%) matrix(1, 0, 0, 1, 0, 0);"><div class="_i" style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(0%, 50%) matrix(1, 0, 0, 1, 0, 0);">идей</div><br style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(0%, 50%) matrix(1, 0, 0, 1, 0, 0);"><div class="_i" style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(0%, 50%) matrix(1, 0, 0, 1, 0, 0);">и новинок</div><br style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(0%, 50%) matrix(1, 0, 0, 1, 0, 0);"><div class="_i" style="z-index: 0; visibility: hidden; opacity: 0; transform: translate(0%, 50%) matrix(1, 0, 0, 1, 0, 0);">на IKEA.ru</div></div>
+
+		<div id="white" style="visibility: hidden; opacity: 0;"></div>
+
+		<div id="legal">©Inter IKEA Systems B.V. 2017</div>
+		<img src="./logo.svg" id="logo" alt="">
+
+
+	</div>
+	<script src="./animation.js"></script>
+
+
+</body></html>
